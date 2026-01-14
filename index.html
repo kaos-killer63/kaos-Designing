@@ -359,12 +359,12 @@
         }
 
         .slider-item {
-            flex: 0 0 200px;
+            flex: 0 0 300px;
             display: flex;
             align-items: center;
             justify-content: center;
             background: white;
-            min-height: 250px;
+            min-height: 350px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
@@ -377,11 +377,9 @@
         }
 
         .slider-item img {
-            width: auto;
-            height: auto;
-            max-width: 325px;
-            max-height: 350px;
-            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             display: block;
         }
 
@@ -654,12 +652,12 @@
                 <div class="slider-wrapper" id="sliderWrapper">
                     <div class="slider-item">
                         <div class="slider-item-placeholder">
-                            <img src="https://cdn.discordapp.com/attachments/1461036367105491066/1461040363920687215/image.png?ex=69691b5f&is=6967c9df&hm=583dc24278c0f38814304a9a4434de41df61383ed7aee5a94b8ad2639ce3067e&" alt="skateboard design" width="325">
+                            <img src="https://cdn.discordapp.com/attachments/976549035320176641/1461064483236741130/image.png?ex=696931d6&is=6967e056&hm=be746c1be030e45d21380d0575eba68cabbdc6eb1373187909e22acb1d376fe9&" alt="skateboard design" width="325">
                         </div>
                     </div>
                     <div class="slider-item">
                         <div class="slider-item-placeholder">
-                            <img src="https://cdn.discordapp.com/attachments/1461036367105491066/1461041415457996942/image.png?ex=69691c5a&is=6967cada&hm=bcd3fecef30dd5cb84f9ca4c235d6004fffaf92567fab5f1bb8de54f5c4b7793&" alt="femtanyl hoodie design" width="325">
+                            <img src="https://cdn.discordapp.com/attachments/976549035320176641/1461064743728185547/image.png?ex=69693214&is=6967e094&hm=8e1d2bdd870e7b4003a675cfe41581adecfcda4b074dfd524e5d2fe973c63f31&" alt="femtanyl hoodie design" width="325">
                         </div>
                     </div>
                     <div class="slider-item">
@@ -725,7 +723,7 @@
         
         let isDragging = false;
         const totalItems = sliderItems.length;
-        const itemWidth = 200; // width of each item in px
+        const itemWidth = 300; // width of each item in px
         const gap = 2; // gap between items in rem, convert to px (1rem = 16px)
         const gapPx = gap * 16;
         const totalWidth = (itemWidth + gapPx) * totalItems;
